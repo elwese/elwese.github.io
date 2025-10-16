@@ -1,0 +1,121 @@
+/* ===== ESTILO GENERAL ===== */
+:root {
+  --azul-suave: #3a7bd5;
+  --azul-claro: #00d2ff;
+  --texto: #333;
+  --fondo: #f4f9ff;
+  --blanco: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.hero {
+  background: linear-gradient(90deg, var(--azul-suave), var(--azul-claro));
+  color: var(--blanco);
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== SECCIONES ===== */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  color: var(--azul-suave);
+  border-bottom: 2px solid var(--azul-claro);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.item h3 {
+  color: #1f3b73;
+  margin-bottom: 0.3rem;
+}
+
+.item .fecha {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== HABILIDADES ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.skills div {
+  flex: 1 1 250px;
+}
+
+.skills h4 {
+  color: #1f3b73;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== LISTAS Y LINKS ===== */
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--azul-suave);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--azul-suave);
+  color: var(--blanco);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #cce7ff;
+}
